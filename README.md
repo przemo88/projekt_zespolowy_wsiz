@@ -1,4 +1,4 @@
 # projekt_zespolowy_wsiz
-# Przemsyław Jachyra
+# Przemysław Jachyra
 # Patryk Jarosz
-# Przemsyław Przewoźnik
+# Przemysław Przewoźnik
