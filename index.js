@@ -160,7 +160,7 @@ app.post('/login', (req, res) => {
     // Prosta weryfikacja loginu (w rzeczywistości należałoby to zrobić bezpieczniej)
     if (username === 'admin' && password === 'password') {
       res.cookie('user', username); // Zapisanie nazwy użytkownika w ciasteczkach
-      res.redirect('/baza');
+      res.redirect('/poufne');
     } else {
       res.send(`
         <h1>Błędne dane logowania</h1>
@@ -175,10 +175,10 @@ app.post('/login', (req, res) => {
     res.redirect('/');
   });
 
-  // Baza danych
-  app.get('/baza', (req, res) => {
+  // Poufne dane
+  app.get('/poufne', (req, res) => {
     res.send(`
-        <h1>Tutaj będzie baza danych</h1>
+        <p>Poufne informacje</p>
     `);
 });
 
